@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>أكواد خصم حصرية</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       Google Analytics
+       ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M01XHT35MC"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-M01XHT35MC');
+  </script>
+
+  <style>
+
+    :root{
+      --bg:#121414;
+      --bg-soft:#1760ce;
+      --card:#dad1c8;
+      --line:#111110;
+      --text:#f1f6f4;
+      --text-dim:#f1f6f4;
+      --lime:#1760ce;
+      --coral:#eb0000;
+      --coral-dim:#f1f6f4;
+      --page-max:760px;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:'Cairo', sans-serif;
+      min-height:100vh;
+      padding-bottom:calc(40px + env(safe-area-inset-bottom));
+      -webkit-tap-highlight-color:transparent;
+      overflow-x:hidden;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{
+        animation-duration:.001s !important;
+        transition-duration:.001s !important;
+      }
+
+      html{
+        scroll-behavior:auto;
+      }
+    }
+
+    .noise{
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.04;
+      z-index:0;
+      background-image:radial-gradient(circle at 1px 1px, #fff 1px, transparent 0);
+      background-size:22px 22px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(6px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .fade-in{
+      animation:fadeIn .35s ease;
+    }
+
+    /* ============================================================
+       Brand badge
+       ============================================================ */
+
+    .badge-wrap{
+      width:42px;
+      height:42px;
+      border-radius:11px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-shrink:0;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .badge-wrap .badge-fallback{
+      font-family:'Tajawal', sans-serif;
+      font-weight:900;
+      font-size:16px;
+      color:#101013;
+    }
+
+    .badge-wrap .brand-logo{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* ============================================================
+       Offer card
+       ============================================================ */
+
+    .offer-card{
+      border-radius:18px;
+      padding:16px;
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+      width:100%;
+    }
+
+    .offer-tag{
+      display:inline-block;
+      color:#101013;
+      font-family:'Tajawal', sans-serif;
+      font-weight:900;
+      font-size:11px;
+      padding:4px 10px;
+      border-radius:999px;
+      margin-bottom:12px;
+      letter-spacing:.3px;
+    }
+
+    .store-head{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:12px;
+    }
+
+    .store-name{
+      font-family:'Tajawal', sans-serif;
+      font-weight:700;
+      font-size:17px;
+    }
+
+    .store-sub{
+      font-size:11px;
+      color:var(--text-dim);
+      margin-top:1px;
+    }
+
+    .discount-pill{
+      margin-inline-start:auto;
+      font-size:12px;
+      font-weight:700;
+      color:var(--coral);
+      background:var(--coral-dim);
+      border-radius:999px;
+      padding:4px 10px;
+      white-space:nowrap;
+    }
+
+    .hook{
+      font-size:14px;
+      color:var(--text-dim);
+      line-height:1.65;
+      margin-bottom:12px;
+    }
+
+    .used-count{
+      font-size:12px;
+      color:var(--text-dim);
+      margin-bottom:14px;
+    }
+
+    /* ============================================================
+       Code
+       ============================================================ */
+
+    .code-row.glass{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      background:#171717;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 6px 18px rgba(0,0,0,.25);
+      border-radius:13px;
+      padding:12px 14px;
+      margin-bottom:10px;
+      cursor:pointer;
+      transition:background .4s ease, border-color .4s ease;
+    }
+
+    .code-row .code-text{
+      font-size:19px;
+      font-family:'Tajawal',sans-serif;
+      font-weight:900;
+      letter-spacing:.5px;
+      direction:ltr;
+    }
+
+    .copy-btn{
+      background:transparent;
+      border:1px solid rgba(255,255,255,.25);
+      color:var(--text);
+      font-family:'Cairo', sans-serif;
+      font-weight:700;
+      font-size:12px;
+      padding:10px 14px;
+      min-height:40px;
+      border-radius:9px;
+      cursor:pointer;
+      transition:.15s ease;
+      white-space:nowrap;
+      flex-shrink:0;
+    }
+
+    .copy-btn.copied{
+      background:var(--store-color) !important;
+      color:#171717 !important;
+      border-color:var(--store-color) !important;
+    }
+
+    /* ============================================================
+       Shop button
+       ============================================================ */
+
+    .shop-btn{
+      display:block;
+      text-align:center;
+      font-family:'Tajawal', sans-serif;
+      font-weight:900;
+      font-size:14px;
+      padding:13px;
+      min-height:46px;
+      border-radius:12px;
+      text-decoration:none;
+      transition:.15s ease;
+    }
+
+    .shop-btn:active{
+      transform:scale(.98);
+    }
+
+    .no-link-note{
+      text-align:center;
+      font-size:12px;
+      color:var(--text-dim);
+      padding:12px;
+      border:1px dashed var(--line);
+      border-radius:12px;
+    }
+
+    .offer-list{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    /* ============================================================
+       Header
+       ============================================================ */
+
+    header{
+      text-align:center;
+      padding:34px 20px 22px;
+      position:relative;
+      z-index:1;
+    }
+
+    #headlineBox{
+      transition:opacity .3s ease;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-family:'Tajawal', sans-serif;
+      font-weight:700;
+      font-size:13px;
+      color:var(--lime);
+      letter-spacing:.5px;
+      border:1px solid rgba(213,255,63,.3);
+      padding:6px 14px;
+      border-radius:999px;
+      margin-bottom:18px;
+    }
+
+    .eyebrow .dot{
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:var(--lime);
+      animation:pulse 1.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse{
+      0%,100%{
+        opacity:1;
+        transform:scale(1);
+      }
+
+      50%{
+        opacity:.4;
+        transform:scale(.7);
+      }
+    }
+
+    h1{
+      font-family:'Tajawal', sans-serif;
+      font-weight:900;
+      font-size:clamp(30px, 8vw, 46px);
+      line-height:1.15;
+      letter-spacing:-.5px;
+    }
+
+    h1 span{
+      color:var(--lime);
+    }
+
+    .sub{
+      color:var(--text-dim);
+      font-size:15px;
+      margin-top:12px;
+      max-width:480px;
+      margin-inline:auto;
+    }
+
+    /* ============================================================
+       Countdown
+       ============================================================ */
+
+    .timer-wrap{
+      max-width:520px;
+      margin:26px auto 8px;
+      padding:0 16px;
+      position:relative;
+      z-index:1;
+    }
+
+    .timer-label{
+      font-size:12px;
+      color:var(--coral);
+      font-weight:700;
+      text-align:center;
+      margin-bottom:10px;
+      letter-spacing:.5px;
+    }
+
+    .timer{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:8px;
+      background:var(--bg-soft);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px 10px;
+    }
+
+    .timer .unit{
+      text-align:center;
+      position:relative;
+    }
+
+    .timer .unit:not(:last-child)::after{
+      content:'';
+      position:absolute;
+      left:-4px;
+      top:50%;
+      transform:translateY(-50%);
+      width:1px;
+      height:60%;
+      background:var(--line);
+    }
+
+    .timer .num{
+      font-family:'Tajawal', sans-serif;
+      font-weight:900;
+      font-size:clamp(22px, 6vw, 30px);
+      color:var(--text);
+      font-variant-numeric:tabular-nums;
+    }
+
+    .timer .lbl{
+      font-size:11px;
+      color:var(--text-dim);
+      margin-top:2px;
+    }
+
+    .timer.ending .num{
+      color:var(--coral);
+    }
+
+    /* ============================================================
+       See more / Back
+       ============================================================ */
+
+    .see-more-wrap{
+      max-width:var(--page-max);
+      margin:18px auto 0;
+      padding:0 16px;
+      position:relative;
+      z-index:1;
+    }
+
+    .see-more-btn{
+      display:block;
+      width:100%;
+      background:var(--bg-soft);
+      border:1px solid var(--line);
+      color:var(--text);
+      font-family:'Tajawal', sans-serif;
+      font-weight:700;
+      font-size:14px;
+      padding:14px;
+      min-height:48px;
+      border-radius:14px;
+      cursor:pointer;
+    }
+
+    .back-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      background:none;
+      border:none;
+      color:var(--text-dim);
+      font-family:'Cairo', sans-serif;
+      font-weight:700;
+      font-size:13px;
+      padding:8px 2px;
+      cursor:pointer;
+      margin-bottom:6px;
+    }
+
+    main{
+      max-width:var(--page-max);
+      margin:0 auto;
+      padding:20px 16px 10px;
+      position:relative;
+      z-index:1;
+    }
+
+    .grid-label{
+      font-family:'Tajawal', sans-serif;
+      font-weight:700;
+      font-size:13px;
+      color:var(--text-dim);
+      margin-bottom:12px;
+      padding-inline:2px;
+    }
+
+    footer{
+      text-align:center;
+      color:var(--text-dim);
+      font-size:12px;
+      padding:24px 20px calc(6px + env(safe-area-inset-bottom));
+      position:relative;
+      z-index:1;
+    }
+
+    @media (min-width:640px){
+
+      :root{
+        --page-max:620px;
+      }
+
+      h1{
+        font-size:48px;
+      }
+
+    }
+
+    @media (min-width:960px){
+
+      :root{
+        --page-max:700px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<header>
+
+  <div id="headlineBox">
+
+    <span class="eyebrow">
+      <span class="dot"></span>
+      عرض لفترة محدودة
+    </span>
+
+    <h1 id="h1Text"></h1>
+
+    <p class="sub" id="subText"></p>
+
+  </div>
+
+</header>
+
+
+<div class="timer-wrap">
+
+  <div class="timer-label">
+    ⏳ العرض بينتهي خلال
+  </div>
+
+  <div class="timer" id="timer">
+
+    <div class="unit">
+      <div class="num" id="d">00</div>
+      <div class="lbl">يوم</div>
+    </div>
+
+    <div class="unit">
+      <div class="num" id="h">00</div>
+      <div class="lbl">ساعة</div>
+    </div>
+
+    <div class="unit">
+      <div class="num" id="m">00</div>
+      <div class="lbl">دقيقة</div>
+    </div>
+
+    <div class="unit">
+      <div class="num" id="s">00</div>
+      <div class="lbl">ثانية</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div id="viewHome">
+
+  <main>
+
+    <div class="offer-list" id="homeList"></div>
+
+  </main>
+
+  <div class="see-more-wrap">
+
+    <button class="see-more-btn" id="seeMoreBtn">
+      شوف خصومات المتاجر الأخرى ←
+    </button>
+
+  </div>
+
+</div>
+
+
+<div id="viewAll" style="display:none;">
+
+  <main>
+
+    <button class="back-btn" id="backBtn">
+      → رجوع للعرض الرئيسي
+    </button>
+
+    <div class="grid-label">
+      كل الأكواد
+    </div>
+
+    <div class="offer-list" id="allList"></div>
+
+  </main>
+
+</div>
+
+
+<footer>
+  الأكواد سارية جربها الان. ضع كود الخصم قبل الشراء.
+</footer>
+
+
+<script>
+
+  /* ============================================================
+     أدوات مساعدة
+     ============================================================ */
+
+  function hexToRgba(hex, a){
+
+    const h = hex.replace('#','');
+
+    const r = parseInt(h.substring(0,2),16);
+    const g = parseInt(h.substring(2,4),16);
+    const b = parseInt(h.substring(4,6),16);
+
+    return `rgba(${r},${g},${b},${a})`;
+
+  }
+
+
+  function formatCount(n){
+
+    if(n >= 1000){
+      return (n/1000).toFixed(
+        n % 1000 === 0 ? 0 : 1
+      ) + 'k';
+    }
+
+    return String(n);
+
+  }
+
+
+  /* ============================================================
+     العداد الوهمي الموجود في التصميم
+     
+     مهم:
+     هذا العداد لا علاقة له بـ Google Analytics.
+     لا يتم استخدامه كإحصائية حقيقية.
+     ============================================================ */
+
+  function getUsedCount(base){
+
+    const anchorKey = 'usage_anchor_ts_v1';
+
+    let anchor = localStorage.getItem(anchorKey);
+
+    if(!anchor){
+
+      anchor = Date.now();
+
+      localStorage.setItem(
+        anchorKey,
+        anchor
+      );
+
+    }else{
+
+      anchor = parseInt(
+        anchor,
+        10
+      );
+
+    }
+
+    const hoursElapsed = Math.floor(
+      (Date.now() - anchor) / 3600000
+    );
+
+    return base + hoursElapsed;
+
+  }
+
+
+  function badgeHTML(letter, logo){
+
+    return `
+      <span class="badge-fallback">${letter}</span>
+
+      <img
+        src="${logo}"
+        alt=""
+        class="brand-logo"
+        onload="this.previousElementSibling.style.display='none';"
+        onerror="this.remove();"
+      >
+    `;
+
+  }
+
+
+  const CTA_PHRASES = [
+
+    "شوف العرض ←",
+    "اكتشف الخصم ←",
+    "جرب الكود دلوقتي ←",
+    "وفر فلوسك دلوقتي ←",
+    "ادخل واتفرج ←"
+
+  ];
+
+
+  function randomCTA(){
+
+    return CTA_PHRASES[
+      Math.floor(
+        Math.random() * CTA_PHRASES.length
+      )
+    ];
+
+  }
+
+
+  /* ============================================================
+     بيانات المتاجر
+     ============================================================ */
+
+  const deals = [
+
+    {
+      name: "نون السعودية والخليج",
+      sub: "للسعودية ودول الخليج",
+      badge: "N",
+      badgeColor: "#f4df0a",
+      logo: "logos/1.png",
+      discount: "حتى 70%",
+      hook: "خصومات تجنن تصل لـ70% + توصيل مجاني لباب البيت. العرض ده محدود جدًا وممكن يخلص في أي وقت!",
+      code: "MP94",
+      link: "https://clk.omgt7.com/?PID=55407&AID=2360219&Type=21&r=",
+      usedBase: 1367,
+      homeOrder: 1,
+      tag: "⭐ العرض الأقوى النهاردة"
+    },
+
+    {
+      name: "نون مصر",
+      sub: "خصم + توصيل مجاني",
+      badge: "N",
+      badgeColor: "#f4df0a",
+      logo: "logos/7.png",
+      discount: "حتى 75%",
+      hook: "كل اللي محتاجه في مكان واحد بخصم لغاية 75% + توصيل مجاني لباب البيت.",
+      code: "PZ396",
+      link: "https://clk.omgt7.com/?PID=51515&AID=2360219&Type=21&r=",
+      usedBase: 2100,
+      homeOrder: 3,
+      tag: "🔥 عرض حصري كمان"
+    },
+
+    {
+      name:"نمشي",
+      sub:"أزياء وموضة",
+      badge:"ن",
+      badgeColor:"#ff5d8f",
+      logo:"logos/2.png",
+      discount:"حتى 50%",
+      hook:"ستايلك يتغير من النهاردة! خصومات على أحدث صيحات الموضة والماركات العالمية.",
+      code:"SCE1",
+      link:"https://clk.omgt7.com/?PID=38741&AID=2360219&Type=21&r=",
+      usedBase:1450,
+      homeOrder: 2,
+      tag: "🔥 عرض ال50%"
+    },
+
+    {
+      name:"مومزورلد",
+      sub:"منتجات أطفال وأمومة",
+      badge:"م",
+      badgeColor:"#6fb8ff",
+      logo:"logos/3.png",
+      discount:"حتى 45%",
+      hook:"كل اللي محتاجه طفلك في مكان واحد وبسعر أوفر... خليه مبسوط وانتِ موفرة.",
+      code:"PSE141",
+      link:"https://clk.omgt7.com/?PID=36696&AID=2360219&Type=21&r=",
+      usedBase:980,
+      homeOrder:0
+    },
+
+    {
+      name:"ريف للعطور",
+      sub:"عطور فاخرة",
+      badge:"ر",
+      badgeColor:"#B76EFF",
+      logo:"logos/4.png",
+      discount:"حتى 35%",
+      hook:"خليك العنوان اللي محدش بينساه... ريحتك تفضل في بالهم مع أفخم العطور بخصم حصري.",
+      code:"R152",
+      link:"https://clk.omgt7.com/?PID=56547&AID=2360219&Type=21&r=",
+      usedBase:670,
+      homeOrder:0
+    },
+
+    {
+      name:"نون مصر",
+      sub:"خصم + توصيل مجاني",
+      badge:"ن",
+      badgeColor:"#f4df0a",
+      logo:"logos/7.png",
+      discount:"حتى 75%",
+      hook:"كل اللي محتاجه في مكان واحد بخصم لغاية 75% + توصيل مجاني لباب البيت.",
+      code:"SQ1477",
+      link:"https://clk.omgt7.com/?PID=51515&AID=2360219&Type=21&r=",
+      usedBase:570,
+      homeOrder:0
+    },
+
+    {
+      name:"العيسائي",
+      sub:"تسوق عام",
+      badge:"ع",
+      badgeColor:"#c9a4ff",
+      logo:"logos/5.png",
+      discount:"حتى 50%",
+      hook:"تسوق بذكاء ووفر أكتر... العرض ده يستاهل تجربته دلوقتي.",
+      code:"GN63",
+      link:null,
+      usedBase:540,
+      homeOrder:0
+    },
+
+    {
+      name:"تو يو",
+      sub:"توصيل طلبات",
+      badge:"ت",
+      badgeColor:"#4ee6a0",
+      logo:"logos/6.png",
+      discount:"حتى 60%",
+      hook:"جعان دلوقتي؟ اطلب أكلك المفضل ويوصلك في دقايق مع خصم لغاية 60%.",
+      code:"MRS14",
+      link:null,
+      usedBase:1290,
+      homeOrder:0
+    },
+
+    {
+      name:"تو يو",
+      sub:"توصيل طلبات",
+      badge:"ت",
+      badgeColor:"#4ee6a0",
+      logo:"logos/6.png",
+      discount:"حتى 60%",
+      hook:"أوردرك جاهز يتطلب... جرب الكود ده ووفر لغاية 60% على طلبك.",
+      code:"NN59",
+      link:null,
+      usedBase:860,
+      homeOrder:0
+    },
+
+    {
+      name:"تو يو",
+      sub:"توصيل طلبات",
+      badge:"ت",
+      badgeColor:"#4ee6a0",
+      logo:"logos/6.png",
+      discount:"حتى 60%",
+      hook:"كل أوردر جديد فرصة توفير جديدة... استخدم الكود ده دلوقتي.",
+      code:"MRS15",
+      link:null,
+      usedBase:990,
+      homeOrder:0
+    }
+
+  ];
+
+
+  /* ============================================================
+     نصوص العروض
+     ============================================================ */
+
+  const PROMO_INTERVAL_MS =
+    2 * 60 * 60 * 1000;
+
+
+  const PROMO_MESSAGES = [
+
+    ({ name, discount }) =>
+      `الفرصة قدامك دلوقتي في ${name}... استخدم الكود ووفر ${discount} قبل ما تفوّت التوفير.`,
+
+    ({ name, discount }) =>
+      `متدفعش السعر كامل! خصم ${discount} مستنيك على ${name} — اطلب دلوقتي ووفر أكتر.`,
+
+    ({ name, discount }) =>
+      `كود جاهز لتقليل فاتورتك في ${name}... ${discount} توفير يستاهل التجربة النهاردة.`,
+
+    ({ name, discount }) =>
+      `لو ناوي تشتري، دي اللحظة الصح: ${discount} على ${name} باستخدام الكود الظاهر قدامك.`,
+
+    ({ name, discount }) =>
+      `خلّي أوردر ${name} أوفر بكتير! انسخ الكود وخد خصم ${discount} قبل ما تغيّر رأيك.`
+
+  ];
+
+
+  let promoCycle =
+    Math.floor(
+      Date.now() / PROMO_INTERVAL_MS
+    );
+
+
+  function getPromoText(
+    deal,
+    offset = 0
+  ){
+
+    const messageIndex =
+      (promoCycle + offset) %
+      PROMO_MESSAGES.length;
+
+    return PROMO_MESSAGES[
+      messageIndex
+    ](deal);
+
+  }
+
+
+  function refreshPromoMessages(){
+
+    const currentCycle =
+      Math.floor(
+        Date.now() /
+        PROMO_INTERVAL_MS
+      );
+
+    if(currentCycle === promoCycle){
+      return;
+    }
+
+    promoCycle = currentCycle;
+
+    document
+      .querySelectorAll('[data-promo]')
+      .forEach((el) => {
+
+        const offset =
+          parseInt(
+            el.dataset.promoOffset || '0',
+            10
+          );
+
+        el.textContent =
+          getPromoText(
+            {
+              name:
+                el.dataset.promoName ||
+                'المتجر',
+
+              discount:
+                el.dataset.promoDiscount ||
+                'حصري'
+            },
+            offset
+          );
+
+      });
+
+  }
+
+
+  /* ============================================================
+     إنشاء كارت العرض
+     ============================================================ */
+
+  function offerCardHTML(
+    deal,
+    index
+  ){
+
+    const tagHTML =
+      deal.tag
+        ? `
+          <span
+            class="offer-tag"
+            style="background:${deal.badgeColor}"
+          >
+            ${deal.tag}
+          </span>
+        `
+        : '';
+
+
+    const ctaOrNote =
+      deal.link
+
+        ? `
+          <a
+            class="shop-btn"
+            data-store="${deal.name}"
+            data-code="${deal.code}"
+            style="
+              background:#1b1b17;
+              color:${deal.badgeColor};
+              border:1px solid rgba(255,255,255,.12);
+            "
+            href="${deal.link}"
+            target="_blank"
+            rel="noopener"
+          >
+            ${randomCTA()}
+          </a>
+        `
+
+        : `
+          <div class="no-link-note">
+            استخدم الكود عند الدفع مباشرة
+          </div>
+        `;
+
+
+    return `
+
+      <div
+        class="offer-card"
+        style="
+          background:${hexToRgba(deal.badgeColor,.6)};
+          border-color:${hexToRgba(deal.badgeColor,.6)};
+        "
+      >
+
+        ${tagHTML}
+
+        <div class="store-head">
+
+          <div
+            class="badge-wrap"
+            style="
+              background:${hexToRgba(
+                deal.badgeColor,
+                .95
+              )}
+            "
+          >
+            ${badgeHTML(
+              deal.badge,
+              deal.logo
+            )}
+          </div>
+
+
+          <div>
+
+            <div class="store-name">
+              ${deal.name}
+            </div>
+
+            <div class="store-sub">
+              ${deal.sub}
+            </div>
+
+          </div>
+
+
+          <div class="discount-pill">
+            ${deal.discount}
+          </div>
+
+        </div>
+
+
+        <div
+          class="hook"
+          data-promo
+          data-promo-offset="${index}"
+          data-promo-name="${deal.name}"
+          data-promo-discount="${deal.discount}"
+        >
+          ${getPromoText(
+            deal,
+            index
+          )}
+        </div>
+
+
+        <!--
+          مهم:
+          هذا العداد وهمي تسويقي كما كان موجودًا.
+          لا يتم إرساله إلى Google Analytics.
+        -->
+        <div
+          class="used-count"
+          data-base="${deal.usedBase}"
+        >
+          🔥 ${formatCount(
+            getUsedCount(
+              deal.usedBase
+            )
+          )} استخدموا الكود ده
+        </div>
+
+
+        <div
+          class="code-row glass"
+          data-code="${deal.code}"
+          data-store="${deal.name}"
+        >
+
+          <span
+            class="code-text"
+            style="color:${deal.badgeColor}"
+          >
+            ${deal.code}
+          </span>
+
+
+          <button
+            class="copy-btn"
+            data-code="${deal.code}"
+            data-store="${deal.name}"
+            data-store-color="${deal.badgeColor}"
+            style="
+              color:${deal.badgeColor};
+              border-color:${deal.badgeColor};
+            "
+          >
+            نسخ الكود
+          </button>
+
+        </div>
+
+
+        ${ctaOrNote}
+
+      </div>
+
+    `;
+
+  }
+
+
+  /* ============================================================
+     الصفحة الرئيسية
+     ============================================================ */
+
+  const homeList =
+    document.getElementById(
+      'homeList'
+    );
+
+
+  const homeDeals =
+    deals
+
+      .map(
+        (deal, index) => ({
+          deal,
+          index
+        })
+      )
+
+      .filter(
+        ({ deal }) =>
+          deal.homeOrder > 0
+      )
+
+      .sort(
+        (a, b) =>
+          a.deal.homeOrder -
+          b.deal.homeOrder
+      );
+
+
+  homeList.innerHTML =
+    homeDeals
+      .map(
+        ({ deal, index }) =>
+          offerCardHTML(
+            deal,
+            index
+          )
+      )
+      .join('');
+
+
+  /* ============================================================
+     كل الأكواد
+     ============================================================ */
+
+  const allList =
+    document.getElementById(
+      'allList'
+    );
+
+
+  allList.innerHTML =
+    deals
+      .map(
+        (deal, index) =>
+          offerCardHTML(
+            deal,
+            index
+          )
+      )
+      .join('');
+
+
+  /* ============================================================
+     تبديل الصفحة الرئيسية / كل الأكواد
+     ============================================================ */
+
+  const viewHome =
+    document.getElementById(
+      'viewHome'
+    );
+
+
+  const viewAll =
+    document.getElementById(
+      'viewAll'
+    );
+
+
+  document
+    .getElementById('seeMoreBtn')
+    .addEventListener(
+      'click',
+      () => {
+
+        viewHome.style.display =
+          'none';
+
+        viewAll.style.display =
+          'block';
+
+        viewAll.classList.add(
+          'fade-in'
+        );
+
+        window.scrollTo({
+          top:0,
+          behavior:'smooth'
+        });
+
+      }
+    );
+
+
+  document
+    .getElementById('backBtn')
+    .addEventListener(
+      'click',
+      () => {
+
+        viewAll.style.display =
+          'none';
+
+        viewHome.style.display =
+          'block';
+
+        viewHome.classList.add(
+          'fade-in'
+        );
+
+        window.scrollTo({
+          top:0,
+          behavior:'smooth'
+        });
+
+      }
+    );
+
+
+  /* ============================================================
+     اختيار الكود
+     
+     select_code
+     يسجل عندما الشخص يضغط على مربع الكود نفسه.
+     
+     لا يتم التسجيل إذا كان الضغط على زر "نسخ الكود".
+     ============================================================ */
+
+  document.addEventListener(
+    'click',
+    (e) => {
+
+      const codeRow =
+        e.target.closest(
+          '.code-row'
+        );
+
+
+      if(
+        !codeRow ||
+        e.target.closest('.copy-btn')
+      ){
+        return;
+      }
+
+
+      const code =
+        codeRow.dataset.code ||
+        'Unknown';
+
+
+      const store =
+        codeRow.dataset.store ||
+        'Unknown';
+
+
+      /* Google Analytics */
+
+      if(
+        typeof gtag === 'function'
+      ){
+
+        gtag(
+          'event',
+          'select_code',
+          {
+            store: store,
+            code: code
+          }
+        );
+
+      }
+
+
+      /* تأثير بصري */
+
+      codeRow.style.background =
+        '#222222';
+
+      codeRow.style.borderColor =
+        'rgba(255,255,255,.18)';
+
+
+      setTimeout(
+        () => {
+
+          codeRow.style.background =
+            '#171717';
+
+          codeRow.style.borderColor =
+            'rgba(255,255,255,.10)';
+
+        },
+        500
+      );
+
+    }
+  );
+
+
+  /* ============================================================
+     نسخ الكود
+     ============================================================ */
+
+  function copyTextToClipboard(
+    text
+  ){
+
+    if(
+      navigator.clipboard &&
+      window.isSecureContext
+    ){
+
+      return navigator.clipboard
+        .writeText(text);
+
+    }
+
+
+    /* Fallback */
+
+    return new Promise(
+      (resolve, reject) => {
+
+        try{
+
+          const ta =
+            document.createElement(
+              'textarea'
+            );
+
+
+          ta.value = text;
+
+          ta.setAttribute(
+            'readonly',
+            ''
+          );
+
+          ta.style.position =
+            'fixed';
+
+          ta.style.top =
+            '-1000px';
+
+          ta.style.opacity =
+            '0';
+
+
+          document.body.appendChild(
+            ta
+          );
+
+
+          ta.focus();
+
+          ta.select();
+
+          ta.setSelectionRange(
+            0,
+            text.length
+          );
+
+
+          const ok =
+            document.execCommand(
+              'copy'
+            );
+
+
+          document.body.removeChild(
+            ta
+          );
+
+
+          ok
+            ? resolve()
+            : reject(
+                new Error(
+                  'execCommand copy failed'
+                )
+              );
+
+        }catch(err){
+
+          reject(err);
+
+        }
+
+      }
+    );
+
+  }
+
+
+  /* ============================================================
+     copy_code
+     
+     يتم تسجيل الحدث فقط بعد نجاح عملية النسخ.
+     ============================================================ */
+
+  document.addEventListener(
+    'click',
+    (e) => {
+
+      const btn =
+        e.target.closest(
+          '.copy-btn'
+        );
+
+
+      if(!btn){
+        return;
+      }
+
+
+      const code =
+        btn.dataset.code ||
+        'Unknown';
+
+
+      const store =
+        btn.dataset.store ||
+        'Unknown';
+
+
+      const storeColor =
+        btn.dataset.storeColor ||
+        btn.style.color;
+
+
+      function showCopied(){
+
+        const original =
+          btn.textContent;
+
+
+        btn.textContent =
+          'اتنسخ ✓';
+
+
+        btn.classList.add(
+          'copied'
+        );
+
+
+        btn.style.setProperty(
+          '--store-color',
+          storeColor
+        );
+
+
+        btn.style.background =
+          storeColor;
+
+        btn.style.color =
+          '#171717';
+
+        btn.style.borderColor =
+          storeColor;
+
+
+        /* ======================================================
+           Google Analytics
+           
+           مهم:
+           يتم إرسال copy_code فقط بعد نجاح النسخ.
+           ====================================================== */
+
+        if(
+          typeof gtag === 'function'
+        ){
+
+          gtag(
+            'event',
+            'copy_code',
+            {
+              store: store,
+              code: code
+            }
+          );
+
+        }
+
+
+        setTimeout(
+          () => {
+
+            btn.textContent =
+              original;
+
+            btn.classList.remove(
+              'copied'
+            );
+
+            btn.style.background =
+              'transparent';
+
+            btn.style.color =
+              storeColor;
+
+            btn.style.borderColor =
+              storeColor;
+
+          },
+          1500
+        );
+
+      }
+
+
+      copyTextToClipboard(code)
+
+        .then(
+          showCopied
+        )
+
+        .catch(
+          () => {
+
+            alert(
+              'انسخ الكود يدويًا: ' +
+              code
+            );
+
+          }
+        );
+
+    }
+  );
+
+
+  /* ============================================================
+     shop_click
+     
+     يسجل الضغط على زر الذهاب للمتجر.
+     ============================================================ */
+
+  document.addEventListener(
+    'click',
+    (e) => {
+
+      const shopBtn =
+        e.target.closest(
+          '.shop-btn'
+        );
+
+
+      if(!shopBtn){
+        return;
+      }
+
+
+      const store =
+        shopBtn.dataset.store ||
+        'Unknown';
+
+
+      const code =
+        shopBtn.dataset.code ||
+        'Unknown';
+
+
+      if(
+        typeof gtag === 'function'
+      ){
+
+        gtag(
+          'event',
+          'shop_click',
+          {
+            store: store,
+            code: code
+          }
+        );
+
+      }
+
+    }
+  );
+
+
+  /* ============================================================
+     تحديث العداد الوهمي
+     
+     لا علاقة له بـ Analytics.
+     ============================================================ */
+
+  function refreshUsedCounts(){
+
+    document
+      .querySelectorAll(
+        '[data-base]'
+      )
+      .forEach(
+        el => {
+
+          const base =
+            parseInt(
+              el.dataset.base,
+              10
+            );
+
+
+          el.textContent =
+            `🔥 ${formatCount(
+              getUsedCount(base)
+            )} استخدموا الكود ده`;
+
+        }
+      );
+
+  }
+
+
+  setInterval(
+    refreshUsedCounts,
+    60000
+  );
+
+
+  setInterval(
+    refreshPromoMessages,
+    60000
+  );
+
+
+  /* ============================================================
+     العناوين المتغيرة
+     ============================================================ */
+
+  const HEADLINES = [
+
+    {
+      h1:'وفّر فلوسك <span>دلوقتي</span><br>مش بكرة',
+      sub:'أكواد خصم حقيقية على أكبر المتاجر... انسخ الكود واستخدمه قبل ما يخلص.'
+    },
+
+    {
+      h1:'خصومات <span>تجنن</span><br>لفترة محدودة',
+      sub:'كل ثانية بتستناها بتفوّت عليك فلوس... اغتنم العرض دلوقتي.'
+    },
+
+    {
+      h1:'الفرصة <span>مش هتتكرر</span><br>اغتنمها دلوقتي',
+      sub:'أكواد حصرية بتوفرلك لغاية 75%... خد الكود واستخدمه فورًا.'
+    },
+
+    {
+      h1:'ليه تدفع <span>أكتر</span>؟',
+      sub:'خصومات حقيقية وموثوقة على أشهر المتاجر... جرب دلوقتي.'
+    },
+
+    {
+      h1:'العرض ده <span>هيخلص</span><br>قريب أوي',
+      sub:'متستناش لحد ما يفوتك... انسخ كودك واشتري دلوقتي.'
+    }
+
+  ];
+
+
+  const h1El =
+    document.getElementById(
+      'h1Text'
+    );
+
+
+  const subEl =
+    document.getElementById(
+      'subText'
+    );
+
+
+  const headlineBox =
+    document.getElementById(
+      'headlineBox'
+    );
+
+
+  let hIndex =
+    Math.floor(
+      Math.random() *
+      HEADLINES.length
+    );
+
+
+  function renderHeadline(i){
+
+    h1El.innerHTML =
+      HEADLINES[i].h1;
+
+    subEl.textContent =
+      HEADLINES[i].sub;
+
+  }
+
+
+  renderHeadline(
+    hIndex
+  );
+
+
+  setInterval(
+    () => {
+
+      headlineBox.style.opacity =
+        0;
+
+
+      setTimeout(
+        () => {
+
+          hIndex =
+            (hIndex + 1) %
+            HEADLINES.length;
+
+
+          renderHeadline(
+            hIndex
+          );
+
+
+          headlineBox.style.opacity =
+            1;
+
+        },
+        300
+      );
+
+    },
+    6000
+  );
+
+
+  /* ============================================================
+     العداد التنازلي
+     ============================================================ */
+
+  const COUNTDOWN_DURATIONS_HOURS =
+    [12, 24, 29];
+
+
+  const STORAGE_KEY =
+    'deal_deadline_ts_random_v2';
+
+
+  const DURATION_KEY =
+    'deal_duration_hours_random_v2';
+
+
+  let deadline =
+    Number(
+      localStorage.getItem(
+        STORAGE_KEY
+      )
+    );
+
+
+  function chooseCountdownDuration(){
+
+    const index =
+      Math.floor(
+        Math.random() *
+        COUNTDOWN_DURATIONS_HOURS.length
+      );
+
+
+    return COUNTDOWN_DURATIONS_HOURS[
+      index
+    ];
+
+  }
+
+
+  function startNewCountdown(){
+
+    const durationHours =
+      chooseCountdownDuration();
+
+
+    deadline =
+      Date.now() +
+      durationHours *
+      60 *
+      60 *
+      1000;
+
+
+    localStorage.setItem(
+      STORAGE_KEY,
+      String(deadline)
+    );
+
+
+    localStorage.setItem(
+      DURATION_KEY,
+      String(durationHours)
+    );
+
+  }
+
+
+  if(
+    !Number.isFinite(deadline) ||
+    deadline <= Date.now()
+  ){
+
+    startNewCountdown();
+
+  }
+
+
+  const dEl =
+    document.getElementById(
+      'd'
+    );
+
+
+  const hEl =
+    document.getElementById(
+      'h'
+    );
+
+
+  const mEl =
+    document.getElementById(
+      'm'
+    );
+
+
+  const sEl =
+    document.getElementById(
+      's'
+    );
+
+
+  const timerEl =
+    document.getElementById(
+      'timer'
+    );
+
+
+  const timerLabelEl =
+    document.querySelector(
+      '.timer-label'
+    );
+
+
+  function pad(n){
+
+    return String(n)
+      .padStart(
+        2,
+        '0'
+      );
+
+  }
+
+
+  function tick(){
+
+    const remaining =
+      deadline -
+      Date.now();
+
+
+    if(
+      remaining <= 0
+    ){
+
+      startNewCountdown();
+
+      timerEl.classList.remove(
+        'ending'
+      );
+
+      timerLabelEl.textContent =
+        '⏳ العرض مستمر — ينتهي خلال';
+
+
+      tick();
+
+      return;
+
+    }
+
+
+    timerLabelEl.textContent =
+      '⏳ العرض مستمر — ينتهي خلال';
+
+
+    const days =
+      Math.floor(
+        remaining /
+        (1000*60*60*24)
+      );
+
+
+    const hours =
+      Math.floor(
+        (
+          remaining %
+          (1000*60*60*24)
+        ) /
+        (1000*60*60)
+      );
+
+
+    const mins =
+      Math.floor(
+        (
+          remaining %
+          (1000*60*60)
+        ) /
+        (1000*60)
+      );
+
+
+    const secs =
+      Math.floor(
+        (
+          remaining %
+          (1000*60)
+        ) /
+        1000
+      );
+
+
+    dEl.textContent =
+      pad(days);
+
+    hEl.textContent =
+      pad(hours);
+
+    mEl.textContent =
+      pad(mins);
+
+    sEl.textContent =
+      pad(secs);
+
+
+    if(
+      remaining <
+      1000*60*60*3
+    ){
+
+      timerEl.classList.add(
+        'ending'
+      );
+
+    }
+
+  }
+
+
+  tick();
+
+
+  setInterval(
+    tick,
+    1000
+  );
+
+</script>
+
+</body>
+</html>
